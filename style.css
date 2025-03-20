@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 360px;
+  background: #000;
+  color: #fff;
+  font: 500 24px 'Oswald', sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #c8aa6d;
+  text-decoration: none !important;
+  transition: all 0.3s ease 0s;
+}
+
+a:hover, a:active {
+  color: #beb8c4;
+}
+
+dl {
+  list-style-position: inside;
+  margin: 21px 0;
+}
+
+dd {
+  line-height: 1.6;
+  margin: 9px 0;
+}
+
+dt {
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 9px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1:after {
+  width: 30px;
+  border-bottom: 2px solid #fff;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  padding: 21px 0 0 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+li {
+  line-height: 1.6;
+  margin: 9px 0;
+}
+
+ol, ul {
+  list-style-position: inside;
+  margin: 21px 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 21px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #000 url('media/background.png') center center/cover no-repeat;
+  box-shadow: 0 0 90px rgba(0,0,0,0.9) inset;
+  display: flex;
+  padding: 45px;
+}
+
+header section {
+  max-width: 600px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+#address {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 30px;
+}
+
+#map {
+  background: #000 url('media/map.png') top left/cover no-repeat;
+  flex: 1;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+  header {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  main {
+    height: 900px;
+    flex-direction: column;
+  }
+}
